@@ -1,0 +1,51 @@
+Python 2.7.8 (default, Jun 30 2014, 16:03:49) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> """[PROJECT] 99 Bottles of Beer On the Wall Lyrics
+GOAL
+
+Create a program that prints out every line to the song "99 bottles of beer on the wall." This should be a pretty simple program, so to make it a bit harder, here are some rules to follow.
+
+RULES
+
+If you are going to use a list for all of the numbers, do not manually type them all in. Instead, use a built in function.
+
+Besides the phrase "take one down," you may not type in any numbers/names of numbers directly into your song lyrics.
+
+Remember, when you reach 1 bottle left, the word "bottles" becomes singular.
+
+Put a blank line between each verse of the song."""
+
+"""99 bottles of beer on the wall, 99 bottles of beer.
+Take one down and pass it around, 98 bottles of beer on the wall.
+
+98 bottles of beer on the wall, 98 bottles of beer.
+Take one down and pass it around, 97 bottles of beer on the wall."""
+
+"""2 bottles of beer on the wall, 2 bottles of beer.
+Take one down and pass it around, 1 bottle of beer on the wall.
+
+1 bottle of beer on the wall, 1 bottle of beer.
+Take one down and pass it around, no more bottles of beer on the wall.
+
+No more bottles of beer on the wall, no more bottles of beer. 
+Go to the store and buy some more, 99 bottles of beer on the wall."""
+
+def bottles_of_beer():
+    n = 99
+    n_store = 99
+    while n >= 0 and n <= 99:
+        if n <= 99 and n > 1:
+            print """ %s bottles of beer on the wall, %s bottles of beer.
+            Take one down, pass it around, %s bottles of beer on the wall. """ % (n , n, n - 1)
+            n = n - 1
+        
+        elif n == 2:
+            print "one bottle of beer is left on the wall"
+            n = n - 1
+         
+        elif n == 1
+		
+		else:
+                    print "okay I think this is working so far." 
+                    n = n - 1
+bottles_of_beer()

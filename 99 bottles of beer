@@ -1,0 +1,17 @@
+def bottles_of_beer():
+    n = 99
+    n_store = 99
+    while n >= 0:
+        if n <= 99 and n > 1:
+            print """ %s bottles of beer on the wall, %s bottles of beer.
+            Take one down, pass it around, %s bottles of beer on the wall. """ % (n , n, n - 1)
+            n = n - 1
+        
+        elif n == 1:
+            print "one bottle of beer is left on the wall"
+            n = n - 1
+         
+        else:
+                    print "okay I think this is working so far." 
+                    n = n - 1
+bottles_of_beer()
